@@ -9,6 +9,7 @@ public class Movement : MonoBehaviour
     public FixedJoystick joystick;
     public float Xspeed = 5f;
     public Transform player;
+    
 
     // Start is called before the first frame update
     void Start()

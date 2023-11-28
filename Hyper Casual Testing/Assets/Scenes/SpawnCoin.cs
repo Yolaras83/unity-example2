@@ -24,6 +24,7 @@ public class SpawnCoin : MonoBehaviour
     public ParticleSystem MoneyCollect;
     public GameObject ParticleObj;
     public Transform Particle;
+    public AudioSource CoinCollect;
     public Transform ParticleTp;
 
 
@@ -81,6 +82,7 @@ public class SpawnCoin : MonoBehaviour
     {
         if (collision.gameObject.name == "Coin(Clone)")
         {
+            CoinCollect.Play();
             GameObject.Find("ParticleSystem(Clone)").transform.position = GameObject.Find("Coin(Clone)").transform.position;
 
             CollectedCoins = CollectedCoins + 1;
