@@ -41,7 +41,7 @@ public class FinishTrigger : MonoBehaviour
 
     public void LoadMainMenu()
     {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("Menu");
     }
 
     public void NextLevel()
